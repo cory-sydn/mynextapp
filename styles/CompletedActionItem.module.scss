@@ -1,0 +1,37 @@
+$green: #00cc00;
+$White: #ffffff;
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 52px;
+  height: 100%;
+  background: $White;
+  padding: 1rem 3rem;
+  @media screen and (max-width: 800px) {
+    padding: 1rem 2rem;
+  }
+  @media screen and (max-width: 400px) {
+    padding: 1rem;
+  }
+  @media screen and (max-width: 281px) {
+    padding: 1rem 0.5rem;
+  }
+  .textTitle {
+    font-size: 14px;
+    font-weight: 700;
+  }
+  .point {
+    float: right;
+    margin-left: auto;
+    color: $green;
+    font-size: 14px;
+    font-weight: 700;
+  }
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);  
+}
+
+.container:hover {
+  box-shadow: inset 0px 0px 10px #ffcc3380, 0px 0px 10px rgba(0, 0, 0, 0.05);
+}

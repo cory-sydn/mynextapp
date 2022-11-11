@@ -1,0 +1,10 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: calc( 100vh - 68px);
+  width: 100%;
+  color: #000000;
+  background: #fafafa;
+  font-family: 'Quicksand', sans-serif;
+}

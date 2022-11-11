@@ -1,0 +1,48 @@
+@font-face {
+  font-family: "MontserratBold";
+  src: url(../public/fonts/Montserrat-Bold.ttf);
+}
+@font-face {
+  font-family: "MontserratBlack";
+  src: url(../public/fonts/Montserrat-Black.ttf);
+}
+
+.container {
+  font-family: 'MontserratBold', sans-serif;
+  min-width: 146px;
+  .titleNav {
+    font-size: 20px;
+    font-weight: 700;
+    @media screen and (max-width: 400px) {
+      font-size: 18px;
+    }
+    @media screen and (max-width: 300px) {
+      font-size: 16px;
+    }
+  }  
+  .titleHead {
+    font-size: 32px;
+    font-weight: 700;
+  }
+}
+
+.titleBigNav {
+  font-weight: 900;
+  font-family: 'MontserratBlack', sans-serif;
+} 
+
+.titleBigHead {
+  font-weight: 900; 
+  font-family: 'MontserratBlack', sans-serif;
+}
+
+@media screen and (max-width: 400px) {
+  .container {
+  min-width: 115px;
+  }
+}
+@media screen and (max-width: 300px) {
+  .container {
+  min-width: 96px;
+  }
+}

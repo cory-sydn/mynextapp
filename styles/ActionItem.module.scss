@@ -1,0 +1,49 @@
+$green: #00cc00;
+$accentWhite: #ffffff;
+
+.container {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  width: 100%;
+  min-height: 68px;
+  height: 100%;
+  padding: 1rem;
+  margin-top: 1rem;
+  border-radius: 1rem;
+  background: $accentWhite;
+  cursor: pointer;
+  .Image {
+    position: relative;
+    display: grid;
+    place-content: center;
+  }
+  .textArea {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+    .textTitle {
+      font-size: 14px;
+      font-weight: 700;
+    }
+    .desc {
+      font-size: 12px;
+      color: #999999;
+      font-weight: 500;
+    }
+  }
+  .point {
+    float: right;
+    margin-left: auto;
+    color: $green;
+    font-size: 14px;
+    font-weight: 700;
+  }
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);  
+}
+
+.container:hover {
+  box-shadow: inset 0px 0px 10px #ffcc3380, 0px 0px 10px rgba(0, 0, 0, 0.05);
+}
