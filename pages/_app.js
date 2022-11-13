@@ -16,9 +16,7 @@ function MyApp({ Component, pageProps }) {
   useEffect(() => {
 		if (typeof window !== 'undefined') {
 			const status = sessionStorage.getItem("pageView")
-			if( status === "started") {
-        router.push( "/home" , "/home" , undefined)
-      } else {
+			if( status !== "started") {
         router.push( "/intro" , "/intro" , undefined)
       }
 		}
