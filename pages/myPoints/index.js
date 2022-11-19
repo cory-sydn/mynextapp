@@ -15,7 +15,7 @@ const myPoints = ({actions}) => {
 }
 
 export const getStaticProps = async () => {
-	const response = await axios.get("http://localhost:3000/api/actions")
+	const response = await axios.get("https://vercel.com/cory-sydn/mynextapp/api/actions")
 	return {
 		props: {
 			actions: response.data
