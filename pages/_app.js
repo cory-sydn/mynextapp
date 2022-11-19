@@ -20,7 +20,7 @@ function MyApp({ Component, pageProps }) {
         router.push( "/intro" , "/intro" , undefined)
       }
 		}
-	}, [])
+	}, [router])
 
   if (!hasMounted) {
     // make them wait till the real content rendered. Because if you don't, it will cause hydration problems. 

@@ -13,7 +13,7 @@ const Intro = () => {
 		sessionStorage.setItem("pageView", "started");
 		setState(false);
 		router.push("/home", "/home", undefined);
-	}, []);
+	}, [router]);
 
 	useEffect(() => {
 		if (typeof window !== "undefined") {

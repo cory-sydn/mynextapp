@@ -1,12 +1,8 @@
 import axios from 'axios'
-import React, { useEffect } from 'react'
+import React from 'react'
 import ActionsList from '../../component/ActionsList'
 
 const home = ({actions}) => {
-	useEffect(() => {
-		document.title = "TestCase App"
-	}, [])
-  
   return (
     <div>
       <ActionsList actions={actions} />
@@ -15,7 +11,7 @@ const home = ({actions}) => {
 }
 
 export const getStaticProps = async () => {
-	const response = await axios.get("https://vercel.com/cory-sydn/mynextapp/api/actions")
+	const response = await axios.get("https://mynextapp-chi.vercel.app/api/actions")
 	return {
 		props: {
 			actions: response.data
