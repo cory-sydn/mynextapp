@@ -10,7 +10,7 @@ const ActionsList = ({actions}) => {
 		<div className={styles.container}>
 			<div className={styles.containerTitle}>Completed Actions</div>	
 			<div className={styles.list}>
-				{actions.map((action) => solvedActions.includes(action.id) && (
+				{actions?.map((action) => solvedActions.includes(action.id) && (
 					<CompletedActionItem key={action.id} action={action} />
 				))}
 			</div>
