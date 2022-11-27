@@ -11,7 +11,8 @@ const home = ({actions}) => {
 }
 
 export const getStaticProps = async () => {
-	const response = await axios.get(`${process.env.NEXT_PUBLIC_DOMAIN}/api/actions`)
+	//const response = await axios.get(`${process.env.NEXT_PUBLIC_DOMAIN}/api/actions`)
+	const response = await axios.get(`${process.env.API_URL}`)
 	return {
 		props: {
 			actions: response.data

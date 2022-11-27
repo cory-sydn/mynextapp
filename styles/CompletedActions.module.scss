@@ -1,35 +1,11 @@
-$secondWhite: #f5f5f5;
+@use "variables" as *;
+@import "ActionsList.module" ;
 
 .container {
-  font-family: 'Quicksand', sans-serif;
-  font-display: swap;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  min-height: calc( 100vh - 68px);
-  width: 100%;
-  color: #000000;
-  background: $secondWhite;
-  text-align: center;
   .containerTitle {
-    font-size: 16px;
-    margin: 1.5rem 0 1rem 3rem;
-    @media screen and (max-width: 800px) {
-      margin: 1.5rem 0 1rem 2rem;
-    }
-    @media screen and (max-width: 400px) {
-      margin: 1.5rem 0 1rem 1rem;
-    }
-    @media screen and (max-width: 281px) {
-      margin: 1.5rem 0 1rem 0.5rem;
-    }
-    text-align: left;
+    @include responsive-type(margin);
   }
-  .list {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-  }
+
   padding: 1rem 0;
   @media screen and (max-width: 800px) {
     padding: 1rem 0;

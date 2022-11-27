@@ -1,14 +1,8 @@
-@font-face {
-  font-family: "MontserratBold";
-  src: url(../public/fonts/Montserrat-Bold.ttf);
-}
-@font-face {
-  font-family: "MontserratBlack";
-  src: url(../public/fonts/Montserrat-Black.ttf);
-}
+@use "variables" as *;
 
 .container {
-  font-family: 'MontserratBold', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
   min-width: 146px;
   .titleNav {
     font-size: 20px;
@@ -19,7 +13,7 @@
     @media screen and (max-width: 300px) {
       font-size: 16px;
     }
-  }  
+  }
   .titleHead {
     font-size: 32px;
     font-weight: 700;
@@ -28,12 +22,12 @@
 
 .titleBigNav {
   font-weight: 900;
-  font-family: 'MontserratBlack', sans-serif;
-} 
+  font-family: 'Montserrat', sans-serif;
+}
 
 .titleBigHead {
-  font-weight: 900; 
-  font-family: 'MontserratBlack', sans-serif;
+  font-weight: 900;
+  font-family: 'Montserrat', sans-serif;
 }
 
 @media screen and (max-width: 400px) {
