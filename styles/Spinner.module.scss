@@ -6,7 +6,12 @@
   width: 100%;
   height: 100vh;
   inset: 0;
-  margin: 30px 0 0 0;
+  margin: 0 0 0 0;
+  background: #281b41;
+	background-image: url("/images/blurEffect.png");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
   z-index: 8;
 }
 
@@ -14,29 +19,29 @@
   @include grid-center;
 	position: relative;
   background-color: purple;
-	width: 15vmax;
-	height: 15vmax;
+	width: 20vmax;
+	height: 20vmax;
 	border-radius: 50%;
 	background: conic-gradient(
 		#3dffc9, #f7c723, #eb0ea5, #3dffc9
 	);
-	animation: spin 3s linear infinite;
-	box-shadow: 0px 0px 150px -75px black;
-	border: 4px solid white;
+	animation: spin 1s linear infinite;
+	box-shadow: 0px 0px 150px -75px #281b41;
+	border: 4px solid #281b41;
 
   &:before {
     content: "";
-    background-color: white;
+    background-color: #281b41;
     isolation: isolate;
     border-radius: 50%;
     position: absolute;
-    width: calc(100% - 15px);
-    height: calc(100% - 15px);
+    width: calc(100% - 25px);
+    height: calc(100% - 25px);
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    box-shadow: inset 0px 0px 150px -70px rgba(0, 0, 0, 0.240);
-    border: 4px solid white;
+    box-shadow: inset 0px 0px 150px 75px #281b41a7;
+    border: 4px solid #281b41b1;
   }
 
   @keyframes spin {
